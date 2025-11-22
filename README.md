@@ -1,21 +1,86 @@
-### 📸 Vista del Formulario
-![Formulario de Registro](./screenshot.jpg)
+<div align="center">
 
-### 🎬 Demostración Interactiva
+# 📱 PROYECTOTAREA3
+## Formulario de Registro Moderno
 
-<p align="center">
-  <img src="./demo.gif" width="100%" alt="Demo del Formulario">
-- ✨ **Floating Labels**: Labels que se elevan al escribir
-- 🎭 **Animación Shake**: En campos con errores
-- 🔵 **Glow Effects**: Resplandor en focus
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-### Fondo Interactivo
+<p>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/License-Educational-orange?style=flat-square" alt="License">
+</p>
 
-- 55 partículas en movimiento
-- Triangulación dinámica cuando están cerca
-- Repulsión magnética al mover el mouse
-- Efecto "respiración" (pulsing)
-- Color basado en la paleta del tema
+### 🎨 Formulario web interactivo con validación en tiempo real
+### ✨ Diseño glassmorphism y animaciones Canvas
+
+[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso)
+
+---
+
+</div>
+
+## 📋 Descripción
+
+> **Proyecto web profesional** que implementa un formulario de registro con tecnologías modernas y diseño premium.
+
+Formulario de registro interactivo desarrollado con tecnologías web puras (HTML, CSS, JavaScript) que incluye validación en tiempo real, efectos visuales modernos con glassmorphism y una animación de fondo dinámica creada con Canvas API.
+
+### ✨ Características Principales
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🎯 Funcionalidades
+- ✅ Validación en tiempo real
+- ✅ Feedback visual inmediato  
+- ✅ Checklist de contraseña
+- ✅ Animación de fondo interactiva
+- ✅ Efectos glassmorphism
+- ✅ Transiciones suaves
+
+</td>
+<td width="50%">
+
+#### 🎨 Diseño
+- 🎨 Glassmorphism moderno
+- 🌈 Gradientes personalizados
+- ✨ Floating labels
+- 🔵 Efectos de glow
+- 🎭 Animación shake en errores
+- 📱 Responsive design
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛡️ Validación de Campos
+
+<div align="center">
+
+| Campo | Regla de Validación | Estado Visual |
+|:---:|:---|:---:|
+| 📧 **Email** | Formato válido (regex) | 🟢 / 🔴 |
+| 🔒 **Contraseña** | • 5+ caracteres<br>• 1 Mayúscula<br>• 1 Minúscula<br>• 1 Número | ✅ Checklist |
+| 👤 **Usuario** | Mínimo 3 caracteres | 🟢 / 🔴 |
+| 📝 **Nombre** | Campo obligatorio | 🟢 / 🔴 |
+
+</div>
+
+### 🎨 Feedback Visual
+
+```
+🟢 Verde    → Campo válido
+🔴 Naranja  → Campo inválido  
+🔵 Azul     → Focus activo
+✅ Check    → Requisito cumplido
+❌ Error    → Mensaje de error
+```
 
 ---
 
@@ -23,11 +88,16 @@
 
 ```
 PROYECTOTAREA3/
+├── assets/                             # Imágenes y recursos
+│   ├── screenshot.jpg                  # Captura del formulario
+│   ├── demo.gif                        # GIF animado de demostración
+│   └── FOTOHUB.jpg                     # Imagen original
 ├── index.html                          # Estructura HTML
 ├── style.css                           # Estilos (418 líneas)
 ├── script.js                           # Validación + Canvas (281 líneas)
 ├── README.md                           # Este archivo
-└── DOCUMENTACION_PROYECTOTAREA3.md     # Documentación técnica completa
+├── DOCUMENTACION_PROYECTOTAREA3.md     # Documentación técnica completa
+└── .gitignore                          # Archivos ignorados por Git
 ```
 
 ---
@@ -57,7 +127,7 @@ PROYECTOTAREA3/
 ```css
 Azul Principal:    #4F73D0
 Azul Oscuro:       #1E2A47
-Fondo:             #0f172a
+Fondo:             #0f172a / #050510
 Verde Éxito:       #4CCD8A
 Naranja Error:     #FF8C6C
 ```
@@ -69,7 +139,7 @@ Naranja Error:     #FF8C6C
 ### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/PROYECTOTAREA3.git
+git clone https://github.com/webdaniel-1997/PROYECTOTAREA3.git
 cd PROYECTOTAREA3
 ```
 
@@ -93,7 +163,27 @@ python -m http.server 8000
 
 ---
 
-## 📖 Documentación
+## 📸 CAPTURAS DEL PROYECTO
+
+### 🖼️ Vista del Formulario
+
+![Formulario de Registro](./assets/screenshot.jpg)
+
+*Interfaz del formulario con diseño glassmorphism, fondo animado con partículas triangulares y campos con floating labels.*
+
+---
+
+### 🎬 Demostración Interactiva
+
+<p align="center">
+  <img src="./assets/demo.gif" width="100%" alt="Demo del Formulario">
+</p>
+
+*GIF mostrando la validación en tiempo real, efectos visuales (glow, shake), animación de fondo interactiva con el mouse y envío de solicitud con feedback de éxito.*
+
+---
+
+## 📖 Documentación Completa
 
 Para entender en detalle cómo funciona el código:
 
@@ -103,8 +193,8 @@ Incluye:
 - Análisis completo del código HTML, CSS y JavaScript
 - Explicación de cada función paso a paso
 - Algoritmo de triangulación del canvas
-- Conceptos de glassmorphism
-- Tabla de validaciones
+- Conceptos de glassmorphism aplicados
+- Tablas de validaciones detalladas
 
 ---
 
@@ -130,52 +220,6 @@ Incluye:
 - **Canvas API**: Animación de partículas
 - **Algoritmo de triangulación**: Triple bucle optimizado
 - **Interacción mouse**: Cálculo de distancias y fuerzas
-
----
-
-## 🧪 Validación de Campos
-
-### Email
-```javascript
-const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-```
-
-### Contraseña
-- Longitud: `val.length >= 5`
-- Mayúscula: `/[A-Z]/.test(val)`
-- Minúscula: `/[a-z]/.test(val)`
-- Número: `/[0-9]/.test(val)`
-
-### Usuario
-```javascript
-val.length >= 3
-```
-
----
-
-## 🎨 Estilos Destacados
-
-### Efecto Glassmorphism
-
-```css
-.glass-effect {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(16px);
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-}
-```
-
-### Floating Label
-
-```css
-.floating-input:focus ~ .floating-label {
-    top: 8px;
-    font-size: 0.75rem;
-    color: var(--primary-blue);
-}
-```
 
 ---
 
@@ -214,15 +258,13 @@ El diseño se adapta a diferentes tamaños de pantalla:
 
 ---
 
-## 🤝 Contribuciones
+## 👤 Autor
 
-Las contribuciones son bienvenidas. Si encuentras algún bug o tienes sugerencias:
-
-1. Fork el proyecto
-2. Crea una rama (`git checkout -b feature/mejora`)
-3. Commit tus cambios (`git commit -m 'Añade nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/mejora`)
-5. Abre un Pull Request
+**Daniel Garcia Ortega**
+- **DNI**: 76667976Y
+- **Curso**: 1º DAW - Lenguaje de Marcas
+- **Usuario GitHub**: [@webdaniel-1997](https://github.com/webdaniel-1997)
+- **Fecha**: Noviembre 2025
 
 ---
 
@@ -232,29 +274,10 @@ Este proyecto es de uso educativo para el curso de Desarrollo de Aplicaciones We
 
 ---
 
-## 👤 Autor
-
-**Daniel Garcia Ortega**
-- **DNI**: 76667976Y
-- **Curso**: 1º DAW - Lenguaje de Marcas
-- **Fecha**: Noviembre 2025
-
----
-
-## 📞 Contacto
-
-Si tienes preguntas sobre el proyecto:
-
-- 📧 Email: [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
-- 💼 LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-- 🐙 GitHub: [@TuUsuario](https://github.com/TuUsuario)
-
----
-
-## ⭐ Dale una Estrella
-
-Si este proyecto te fue útil, ¡dale una estrella! ⭐
-
----
+<div align="center">
 
 **Desarrollado con 💙 para el curso de DAW**
+
+⭐ Si este proyecto te fue útil, ¡dale una estrella!
+
+</div>
