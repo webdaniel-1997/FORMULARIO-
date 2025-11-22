@@ -27,7 +27,9 @@ Proyecto web que implementa un formulario de registro con:
 
 ### 🎬 Demostración Interactiva
 
-![Demo del Formulario](./demo.gif)
+<p align="center">
+  <img src="./demo.gif" width="100%" alt="Demo del Formulario">
+</p>
 
 *GIF mostrando la validación en tiempo real, efectos visuales, animación de fondo y envío de solicitud.*
 
