@@ -1,27 +1,3 @@
-# 📱 PROYECTOTAREA3 - Formulario de Registro Moderno
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-
-> Formulario web interactivo con validación en tiempo real, diseño glassmorphism y animación de fondo con Canvas.
-
----
-
-## 🎯 Descripción
-
-Proyecto web que implementa un formulario de registro con:
-- ✅ **Validación en tiempo real** de todos los campos
-- ✅ **Feedback visual inmediato** (colores, iconos, mensajes)
-- ✅ **Checklist de contraseña** interactiva
-- ✅ **Animación de fondo** con partículas triangulares (Canvas)
-- ✅ **Diseño glassmorphism** moderno y elegante
-- ✅ **Efectos hover** y transiciones suaves
-
----
-
-## 🖼️ Demo
-
 ### 📸 Vista del Formulario
 ![Formulario de Registro](./screenshot.jpg)
 
@@ -29,27 +5,6 @@ Proyecto web que implementa un formulario de registro con:
 
 <p align="center">
   <img src="./demo.gif" width="100%" alt="Demo del Formulario">
-</p>
-
-*GIF mostrando la validación en tiempo real, efectos visuales, animación de fondo y envío de solicitud.*
-
----
-
-## 🚀 Características
-
-### Validación de Campos
-
-| Campo | Validación |
-|-------|-----------|
-| **Email** | Formato válido con regex |
-| **Contraseña** | Mín. 5 caracteres, 1 mayúscula, 1 minúscula, 1 número |
-| **Usuario** | Mínimo 3 caracteres |
-| **Nombre** | Campo obligatorio |
-
-### Efectos Visuales
-
-- 🎨 **Glassmorphism**: Efecto de vidrio con blur
-- 🌈 **Gradient Border**: Borde con gradiente brillante
 - ✨ **Floating Labels**: Labels que se elevan al escribir
 - 🎭 **Animación Shake**: En campos con errores
 - 🔵 **Glow Effects**: Resplandor en focus
