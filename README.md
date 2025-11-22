@@ -25,11 +25,11 @@ Proyecto web que implementa un formulario de registro con:
 ### 📸 Vista del Formulario
 ![Formulario de Registro](./screenshot.jpg)
 
-### 🎬 Video Demostración
+### 🎬 Demostración Interactiva
 
-https://github.com/webdaniel-1997/PROYECTOTAREA3/assets/videohub.mp4
+![Demo del Formulario](./demo.gif)
 
-> 📹 Video mostrando la interacción completa con el formulario: validación en tiempo real, efectos visuales, animación de fondo y envío de solicitud.
+*GIF mostrando la validación en tiempo real, efectos visuales, animación de fondo y envío de solicitud.*
 
 ---
 
