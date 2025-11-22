@@ -3,20 +3,18 @@
 # 📱 PROYECTOTAREA3
 ## Formulario de Registro Moderno
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-<p>
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/badge/Version-1.0-blue?style=flat-square" alt="Version">
-  <img src="https://img.shields.io/badge/License-Educational-orange?style=flat-square" alt="License">
-</p>
+![Last Commit](https://img.shields.io/github/last-commit/webdaniel-1997/PROYECTOTAREA3?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-success?style=flat-square)
 
-### 🎨 Formulario web interactivo con validación en tiempo real
+###  🎨 Formulario web interactivo con validación en tiempo real
 ### ✨ Diseño glassmorphism y animaciones Canvas
 
-[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso)
+[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso) • [🤝 Contribuir](./CONTRIBUTING.md)
 
 ---
 
@@ -88,16 +86,22 @@ Formulario de registro interactivo desarrollado con tecnologías web puras (HTML
 
 ```
 PROYECTOTAREA3/
-├── assets/                             # Imágenes y recursos
-│   ├── screenshot.jpg                  # Captura del formulario
-│   ├── demo.gif                        # GIF animado de demostración
-│   └── FOTOHUB.jpg                     # Imagen original
-├── index.html                          # Estructura HTML
-├── style.css                           # Estilos (418 líneas)
-├── script.js                           # Validación + Canvas (281 líneas)
-├── README.md                           # Este archivo
-├── DOCUMENTACION_PROYECTOTAREA3.md     # Documentación técnica completa
-└── .gitignore                          # Archivos ignorados por Git
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # GitHub Actions para deploy automático
+├── src/                            # Código fuente
+│   ├── index.html                  # Estructura HTML
+│   ├── style.css                   # Estilos (418 líneas)
+│   └── script.js                   # Validación + Canvas (281 líneas)
+├── assets/                         # Recursos multimedia
+│   ├── screenshot.jpg              # Captura del formulario
+│   ├── demo.gif                    # GIF animado de demostración
+│   └── FOTOHUB.jpg                 # Imagen original
+├── README.md                       # Este archivo
+├── LICENSE                         # Licencia MIT
+├── CONTRIBUTING.md                 # Guía de contribución
+├── DOCUMENTACION_PROYECTOTAREA3.md # Documentación técnica completa
+└── .gitignore                      # Archivos ignorados por Git
 ```
 
 ---
@@ -147,19 +151,25 @@ cd PROYECTOTAREA3
 
 **Opción 1**: Abrir directamente
 ```bash
-# Abre index.html en tu navegador
-start index.html
+# Abre src/index.html en tu navegador
+start src/index.html
 ```
 
 **Opción 2**: Con Live Server (VS Code)
 1. Instala la extensión "Live Server"
-2. Click derecho en `index.html` → "Open with Live Server"
+2. Click derecho en `src/index.html` → "Open with Live Server"
 
 **Opción 3**: Con Python
 ```bash
 python -m http.server 8000
-# Abre http://localhost:8000
+# Abre http://localhost:8000/src
 ```
+
+### Deploy en GitHub Pages
+
+El proyecto se despliega automáticamente en GitHub Pages al hacer push a `main` gracias a GitHub Actions.
+
+**URL del deploy**: `https://webdaniel-1997.github.io/PROYECTOTAREA3/`
 
 ---
 
@@ -233,18 +243,24 @@ Incluye:
 
 ---
 
-## 🔧 Mejoras Futuras
+## 🗺️ Roadmap
 
-- [ ] Integración con backend (Node.js, PHP)
-- [ ] LocalStorage para persistencia
-- [ ] reCAPTCHA para seguridad
-- [ ] Confirmación de contraseña
-- [ ] Modo oscuro/claro toggle
-- [ ] Animaciones de entrada (fade-in)
-- [ ] Barra de progreso del formulario
-- [ ] Indicador de fuerza de contraseña
-- [ ] Tooltips informativos
-- [ ] Soporte multi-idioma
+### Próximas Mejoras
+
+- [ ] **Backend Integration**: Conectar con Node.js o PHP para guardar datos
+- [ ] **LocalStorage**: Persistencia de datos en el navegador
+- [ ] **reCAPTCHA**: Implementar verificación anti-bots
+- [ ] **Confirmación de Contraseña**: Campo adicional para validar contraseña
+- [ ] **Modo Oscuro/Claro**: Toggle para cambiar tema
+- [ ] **Animaciones de Entrada**: Fade-in al cargar la página
+- [ ] **Barra de Progreso**: Indicador visual de campos completados
+- [ ] **Fuerza de Contraseña**: Medidor débil/media/fuerte
+- [ ] **Tooltips**: Ayuda contextual en cada campo
+- [ ] **Multi-idioma**: Soporte para español e inglés
+
+### Bugs Conocidos
+
+No hay bugs reportados actualmente. Si encuentras alguno, [abre un Issue](https://github.com/webdaniel-1997/PROYECTOTAREA3/issues).
 
 ---
 
@@ -258,19 +274,24 @@ El diseño se adapta a diferentes tamaños de pantalla:
 
 ---
 
-## 👤 Autor
+## 🤝 Contribuir
 
-**Daniel Garcia Ortega**
-- **DNI**: 76667976Y
-- **Curso**: 1º DAW - Lenguaje de Marcas
-- **Usuario GitHub**: [@webdaniel-1997](https://github.com/webdaniel-1997)
-- **Fecha**: Noviembre 2025
+¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](./CONTRIBUTING.md) para más detalles sobre nuestro código de conducta y el proceso para enviarnos pull requests.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto es de uso educativo para el curso de Desarrollo de Aplicaciones Web.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](./LICENSE) para más detalles.
+
+---
+
+## 👤 Autor
+
+**Daniel Garcia Ortega**
+- **GitHub**: [@webdaniel-1997](https://github.com/webdaniel-1997)
+- **Curso**: 1º DAW - Lenguaje de Marcas
+- **Fecha**: Noviembre 2025
 
 ---
 
@@ -278,6 +299,9 @@ Este proyecto es de uso educativo para el curso de Desarrollo de Aplicaciones We
 
 **Desarrollado con 💙 para el curso de DAW**
 
-⭐ Si este proyecto te fue útil, ¡dale una estrella!
+[![Contribuir](https://img.shields.io/badge/Contribuir-¡Click%20aquí!-success?style=for-the-badge)](./CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
+
+⭐ Si este proyecto te fue útil, ¡dale una estrella! ⭐
 
 </div>
