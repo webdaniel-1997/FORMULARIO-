@@ -15,7 +15,8 @@
 Formulario de registro interactivo con **validación en tiempo real**, diseño **glassmorphism** y fondo animado con Canvas.
 
 ### 🚀 ¿Cómo probarlo?
-Abre `src/index.html` en tu navegador o visita: **[webdaniel-1997.github.io/PROYECTOTAREA3](https://webdaniel-1997.github.io/PROYECTOTAREA3)**
+**Opción 1**: Abre `src/index.html` en tu navegador local  
+**Opción 2 (online)**: Activa GitHub Pages primero → [Instrucciones aquí](#deploy-en-github-pages)
 
 ### 💡 ¿Por qué lo hice?
 Proyecto educativo para demostrar habilidades en HTML/CSS/JavaScript y diseño moderno.
