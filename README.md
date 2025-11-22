@@ -11,10 +11,16 @@
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-success?style=flat-square)
 
-###  🎨 Formulario web interactivo con validación en tiempo real
-### ✨ Diseño glassmorphism y animaciones Canvas
+### 🎯 ¿Qué hace? 
+Formulario de registro interactivo con **validación en tiempo real**, diseño **glassmorphism** y fondo animado con Canvas.
 
-[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso) • [🤝 Contribuir](./CONTRIBUTING.md)
+### 🚀 ¿Cómo probarlo?
+Abre `src/index.html` en tu navegador o visita: **[webdaniel-1997.github.io/PROYECTOTAREA3](https://webdaniel-1997.github.io/PROYECTOTAREA3)**
+
+### 💡 ¿Por qué lo hice?
+Proyecto educativo para demostrar habilidades en HTML/CSS/JavaScript y diseño moderno.
+
+[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso) • [🤝 Contribuir](./CONTRIBUTING.md) • [📝 Changelog](./CHANGELOG.md)
 
 ---
 
@@ -282,7 +288,9 @@ El diseño se adapta a diferentes tamaños de pantalla:
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](./LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT. Ver el archivo **[LICENSE](./LICENSE)** para más detalles.
+
+**En resumen**: Puedes usar, modificar y distribuir este código libremente, siempre que mantengas el aviso de copyright.
 
 ---
 
