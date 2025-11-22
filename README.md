@@ -22,7 +22,11 @@ Proyecto web que implementa un formulario de registro con:
 
 ## 🖼️ Demo
 
-![Formulario](https://via.placeholder.com/800x400/4F73D0/FFFFFF?text=Captura+del+Formulario)
+### Vista del Formulario
+![Formulario](./screenshot.png)
+
+### Video Demostración
+> 📹 **Próximamente**: Video mostrando la interacción completa con el formulario
 
 ---
 
