@@ -1,139 +1,119 @@
-<div align="center">
-
-# 📱 PROYECTOTAREA3
-## Formulario de Registro Moderno
+# PROYECTOTAREA3
+## Formulario de Registro con Validación en Tiempo Real
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-![Last Commit](https://img.shields.io/github/last-commit/webdaniel-1997/PROYECTOTAREA3?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
-![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-success?style=flat-square)
-
-### 🎯 ¿Qué hace? 
-Formulario de registro interactivo con **validación en tiempo real**, diseño **glassmorphism** y fondo animado con Canvas.
-
-### 🚀 ¿Cómo probarlo?
-**Opción 1**: Abre `src/index.html` en tu navegador local  
-**Opción 2 (online)**: Activa GitHub Pages primero → [Instrucciones aquí](#deploy-en-github-pages)
-
-### 💡 ¿Por qué lo hice?
-Proyecto educativo para demostrar habilidades en HTML/CSS/JavaScript y diseño moderno.
-
-[📸 Ver Demo](#-capturas-del-proyecto) • [📖 Documentación](./DOCUMENTACION_PROYECTOTAREA3.md) • [🚀 Instalación](#-instalación-y-uso) • [🤝 Contribuir](./CONTRIBUTING.md) • [📝 Changelog](./CHANGELOG.md)
 
 ---
 
-</div>
+## ¿Qué es esto?
 
-## 📋 Descripción
+Un formulario de registro que valida los datos mientras escribes. Lo hice para practicar JavaScript y diseño moderno, y la verdad es que me quedó bastante chulo con el efecto de glassmorphism y el fondo animado con partículas.
 
-> **Proyecto web profesional** que implementa un formulario de registro con tecnologías modernas y diseño premium.
-
-Formulario de registro interactivo desarrollado con tecnologías web puras (HTML, CSS, JavaScript) que incluye validación en tiempo real, efectos visuales modernos con glassmorphism y una animación de fondo dinámica creada con Canvas API.
-
-### ✨ Características Principales
-
-<table>
-<tr>
-<td width="50%">
-
-#### 🎯 Funcionalidades
-- ✅ Validación en tiempo real
-- ✅ Feedback visual inmediato  
-- ✅ Checklist de contraseña
-- ✅ Animación de fondo interactiva
-- ✅ Efectos glassmorphism
-- ✅ Transiciones suaves
-
-</td>
-<td width="50%">
-
-#### 🎨 Diseño
-- 🎨 Glassmorphism moderno
-- 🌈 Gradientes personalizados
-- ✨ Floating labels
-- 🔵 Efectos de glow
-- 🎭 Animación shake en errores
-- 📱 Responsive design
-
-</td>
-</tr>
-</table>
+**Por qué lo hice:** Proyecto de clase para la asignatura de Lenguaje de Marcas (1º DAW). Quería hacer algo más allá de un formulario básico y aproveché para experimentar con Canvas API para la animación de fondo, que fue la parte más complicada pero también la más interesante.
 
 ---
 
-## 🛡️ Validación de Campos
+## Tecnologías
 
-<div align="center">
+- **HTML5** - Estructura semántica
+- **CSS3** - Glassmorphism, gradientes, animaciones
+- **JavaScript** - Validación en tiempo real y Canvas API para el fondo
+- **Google Fonts** - Outfit e Inter
+- **Font Awesome 6.4** - Iconos
 
-| Campo | Regla de Validación | Estado Visual |
-|:---:|:---|:---:|
-| 📧 **Email** | Formato válido (regex) | 🟢 / 🔴 |
-| 🔒 **Contraseña** | • 5+ caracteres<br>• 1 Mayúscula<br>• 1 Minúscula<br>• 1 Número | ✅ Checklist |
-| 👤 **Usuario** | Mínimo 3 caracteres | 🟢 / 🔴 |
-| 📝 **Nombre** | Campo obligatorio | 🟢 / 🔴 |
+---
 
-</div>
+## Cómo ejecutarlo
 
-### 🎨 Feedback Visual
+Tienes varias opciones:
 
-```
-🟢 Verde    → Campo válido
-🔴 Naranja  → Campo inválido  
-🔵 Azul     → Focus activo
-✅ Check    → Requisito cumplido
-❌ Error    → Mensaje de error
+**Opción 1 - La más fácil:**
+```bash
+# Clona el repo
+git clone https://github.com/webdaniel-1997/PROYECTOTAREA3.git
+
+# Abre el archivo directamente en tu navegador
+# (En Windows)
+start src/index.html
 ```
 
+**Opción 2 - Con Live Server (recomendado):**
+1. Abre el proyecto en VS Code
+2. Instala la extensión "Live Server"
+3. Click derecho en `src/index.html` → "Open with Live Server"
+
+**Opción 3 - Con servidor Python:**
+```bash
+python -m http.server 8000
+# Luego abre http://localhost:8000/src
+```
+
+**Opción 4 - GitHub Pages:**
+El proyecto se despliega automáticamente en: `https://webdaniel-1997.github.io/PROYECTOTAREA3/`
+
 ---
 
-## 📁 Estructura del Proyecto
+## Características
+
+### Validación en Tiempo Real
+- **Email:** Formato válido con regex
+- **Contraseña:** Mínimo 5 caracteres, 1 mayúscula, 1 minúscula, 1 número
+  - Checklist visual que se actualiza mientras escribes
+- **Usuario:** Mínimo 3 caracteres
+- **Nombre:** Campo obligatorio
+
+### Feedback Visual
+- Verde cuando el campo es válido
+- Naranja cuando hay error (con animación shake)
+- Azul cuando el campo tiene focus
+- El botón de enviar solo se activa cuando todo está correcto
+
+### Animación de Fondo
+- Partículas conectadas formando triángulos (triangulación)
+- Las partículas se alejan del cursor cuando pasas el ratón
+- Efecto de "respiración" en las partículas (van cambiando de opacidad)
+
+---
+
+## Capturas
+
+### Vista del Formulario
+![Formulario](./assets/screenshot.jpg)
+
+### Demo en Acción
+![Demo](./assets/demo.gif)
+
+*En el GIF se ve la validación en tiempo real, los efectos visuales y cómo funciona la animación de fondo.*
+
+---
+
+## Estructura del Proyecto
 
 ```
 PROYECTOTAREA3/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml              # GitHub Actions para deploy automático
-├── src/                            # Código fuente
-│   ├── index.html                  # Estructura HTML
-│   ├── style.css                   # Estilos (418 líneas)
-│   └── script.js                   # Validación + Canvas (281 líneas)
-├── assets/                         # Recursos multimedia
-│   ├── screenshot.jpg              # Captura del formulario
-│   ├── demo.gif                    # GIF animado de demostración
-│   └── FOTOHUB.jpg                 # Imagen original
-├── README.md                       # Este archivo
-├── LICENSE                         # Licencia MIT
-├── CONTRIBUTING.md                 # Guía de contribución
-├── DOCUMENTACION_PROYECTOTAREA3.md # Documentación técnica completa
-└── .gitignore                      # Archivos ignorados por Git
+├── src/
+│   ├── index.html    # HTML del formulario
+│   ├── style.css     # Estilos (glassmorphism, animaciones)
+│   └── script.js     # Validación + Canvas
+├── assets/
+│   ├── screenshot.jpg
+│   ├── demo.gif
+│   └── FOTOHUB.jpg
+├── .github/workflows/
+│   └── deploy.yml    # Deploy automático a GitHub Pages
+├── README.md
+├── LICENSE           # MIT
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+└── DOCUMENTACION_PROYECTOTAREA3.md  # Documentación técnica completa
 ```
 
 ---
 
-## 💻 Tecnologías Utilizadas
-
-### Frontend
-- **HTML5**: Estructura semántica
-- **CSS3**: Glassmorphism, gradientes, animaciones
-- **JavaScript ES6+**: Validación y Canvas API
-
-### Librerías Externas
-- **Google Fonts**: Outfit + Inter
-- **Font Awesome 6.4**: Iconos
-
-### Técnicas Avanzadas
-- Canvas API para animaciones
-- CSS Variables (Custom Properties)
-- Event Listeners
-- Real-time validation
-- DOM Manipulation
-
----
-
-## 🎨 Paleta de Colores
+## Paleta de Colores
 
 ```css
 Azul Principal:    #4F73D0
@@ -145,172 +125,46 @@ Naranja Error:     #FF8C6C
 
 ---
 
-## 🚀 Instalación y Uso
+## Cosas Pendientes / Mejoras Futuras
 
-### Clonar el Repositorio
-
-```bash
-git clone https://github.com/webdaniel-1997/PROYECTOTAREA3.git
-cd PROYECTOTAREA3
-```
-
-### Ejecutar Localmente
-
-**Opción 1**: Abrir directamente
-```bash
-# Abre src/index.html en tu navegador
-start src/index.html
-```
-
-**Opción 2**: Con Live Server (VS Code)
-1. Instala la extensión "Live Server"
-2. Click derecho en `src/index.html` → "Open with Live Server"
-
-**Opción 3**: Con Python
-```bash
-python -m http.server 8000
-# Abre http://localhost:8000/src
-```
-
-### Deploy en GitHub Pages
-
-El proyecto se despliega automáticamente en GitHub Pages al hacer push a `main` gracias a GitHub Actions.
-
-**URL del deploy**: `https://webdaniel-1997.github.io/PROYECTOTAREA3/`
+- [ ] Conectar con backend (Node.js o PHP) para guardar los datos de verdad
+- [ ] Campo de confirmación de contraseña
+- [ ] Guardar datos en LocalStorage
+- [ ] Toggle modo oscuro/claro
+- [ ] Indicador de fuerza de contraseña (débil/media/fuerte)
+- [ ] reCAPTCHA para evitar bots
 
 ---
 
-## 📸 CAPTURAS DEL PROYECTO
+## Documentación Técnica
 
-### 🖼️ Vista del Formulario
+Si quieres entender cómo funciona el código en detalle, revisa:
+**[DOCUMENTACION_PROYECTOTAREA3.md](./DOCUMENTACION_PROYECTOTAREA3.md)**
 
-![Formulario de Registro](./assets/screenshot.jpg)
-
-*Interfaz del formulario con diseño glassmorphism, fondo animado con partículas triangulares y campos con floating labels.*
-
----
-
-### 🎬 Demostración Interactiva
-
-<p align="center">
-  <img src="./assets/demo.gif" width="100%" alt="Demo del Formulario">
-</p>
-
-*GIF mostrando la validación en tiempo real, efectos visuales (glow, shake), animación de fondo interactiva con el mouse y envío de solicitud con feedback de éxito.*
+Incluye explicación paso a paso de las funciones, el algoritmo de triangulación del canvas, conceptos de glassmorphism aplicados, etc.
 
 ---
 
-## 📖 Documentación Completa
+## Contribuir
 
-Para entender en detalle cómo funciona el código:
-
-📄 **[DOCUMENTACION_PROYECTOTAREA3.md](./DOCUMENTACION_PROYECTOTAREA3.md)**
-
-Incluye:
-- Análisis completo del código HTML, CSS y JavaScript
-- Explicación de cada función paso a paso
-- Algoritmo de triangulación del canvas
-- Conceptos de glassmorphism aplicados
-- Tablas de validaciones detalladas
+Si quieres contribuir o reportar algún bug, lee [CONTRIBUTING.md](./CONTRIBUTING.md) para ver las guías de estilo y el proceso.
 
 ---
 
-## 🎓 Conceptos Aplicados
+## Licencia
 
-### HTML
-- Estructura semántica moderna
-- Floating labels pattern
-- Inputs con validación HTML5
-
-### CSS
-- **Flexbox**: Layout centrado
-- **Glassmorphism**: Efecto vidrio con backdrop-filter
-- **Gradient Borders**: Usando pseudo-elementos
-- **Transitions**: Animaciones suaves
-- **CSS Variables**: Paleta centralizada
-- **@keyframes**: Animaciones personalizadas
-
-### JavaScript
-- **DOM Manipulation**: getElementById, querySelector
-- **Event Listeners**: input, click, mousemove
-- **Regex Validation**: Email pattern
-- **Canvas API**: Animación de partículas
-- **Algoritmo de triangulación**: Triple bucle optimizado
-- **Interacción mouse**: Cálculo de distancias y fuerzas
+MIT License - Puedes usar, modificar y distribuir este código libremente. Ver [LICENSE](./LICENSE) para más detalles.
 
 ---
 
-## 📊 Rendimiento
+## Autor
 
-- **Tamaño total**: ~23.5 KB (sin CDN)
-- **FPS del canvas**: 60 FPS constantes
-- **Tiempo de carga**: < 1 segundo
-- **Partículas activas**: 55
-- **Complejidad triangulación**: O(n³)
+**Daniel Garcia Ortega**  
+1º DAW - Lenguaje de Marcas  
+Noviembre 2025
 
----
-
-## 🗺️ Roadmap
-
-### Próximas Mejoras
-
-- [ ] **Backend Integration**: Conectar con Node.js o PHP para guardar datos
-- [ ] **LocalStorage**: Persistencia de datos en el navegador
-- [ ] **reCAPTCHA**: Implementar verificación anti-bots
-- [ ] **Confirmación de Contraseña**: Campo adicional para validar contraseña
-- [ ] **Modo Oscuro/Claro**: Toggle para cambiar tema
-- [ ] **Animaciones de Entrada**: Fade-in al cargar la página
-- [ ] **Barra de Progreso**: Indicador visual de campos completados
-- [ ] **Fuerza de Contraseña**: Medidor débil/media/fuerte
-- [ ] **Tooltips**: Ayuda contextual en cada campo
-- [ ] **Multi-idioma**: Soporte para español e inglés
-
-### Bugs Conocidos
-
-No hay bugs reportados actualmente. Si encuentras alguno, [abre un Issue](https://github.com/webdaniel-1997/PROYECTOTAREA3/issues).
+[![GitHub](https://img.shields.io/badge/GitHub-webdaniel--1997-181717?style=flat-square&logo=github)](https://github.com/webdaniel-1997)
 
 ---
 
-## 📱 Responsive Design
-
-El diseño se adapta a diferentes tamaños de pantalla:
-
-- ✅ Desktop (> 768px)
-- ✅ Tablet (768px - 480px)
-- ✅ Mobile (< 480px)
-
----
-
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](./CONTRIBUTING.md) para más detalles sobre nuestro código de conducta y el proceso para enviarnos pull requests.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo **[LICENSE](./LICENSE)** para más detalles.
-
-**En resumen**: Puedes usar, modificar y distribuir este código libremente, siempre que mantengas el aviso de copyright.
-
----
-
-## 👤 Autor
-
-**Daniel Garcia Ortega**
-- **GitHub**: [@webdaniel-1997](https://github.com/webdaniel-1997)
-- **Curso**: 1º DAW - Lenguaje de Marcas
-- **Fecha**: Noviembre 2025
-
----
-
-<div align="center">
-
-**Desarrollado con 💙 para el curso de DAW**
-
-[![Contribuir](https://img.shields.io/badge/Contribuir-¡Click%20aquí!-success?style=for-the-badge)](./CONTRIBUTING.md)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
-
-⭐ Si este proyecto te fue útil, ¡dale una estrella! ⭐
-
-</div>
+⭐ Si te sirvió de algo, dale una estrella al repo

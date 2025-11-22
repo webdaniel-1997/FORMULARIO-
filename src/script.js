@@ -1,4 +1,4 @@
-// Referencias DOM
+// Referencias a elementos del DOM
 const form = document.getElementById('miFormulario');
 const inputs = {
     email: document.getElementById('email'),
@@ -17,7 +17,6 @@ const btnLimpiar = document.getElementById('btnLimpiar');
 const checklist = document.getElementById('password-checklist');
 const globalMsg = document.getElementById('mensajesGlobales');
 
-// Estado de validación
 let validationState = {
     email: false,
     pass: false,
@@ -25,10 +24,9 @@ let validationState = {
     nombre: false
 };
 
-// Regex
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// --- Lógica de Validación (Mantenida) ---
+// Validación de campos
 function validateField(field, isValid, msg = "") {
     const wrapper = inputs[field].parentElement;
     const errorSpan = errors[field];
@@ -133,7 +131,7 @@ function resetForm() {
 }
 
 
-// --- FONDO: Triangulación "Cyber-Mesh" Mejorada ---
+// Animación de fondo con Canvas (triangulación de partículas)
 const canvas = document.getElementById('particle-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -168,7 +166,6 @@ class Particle {
         this.vx = (Math.random() - 0.5) * 0.6;
         this.vy = (Math.random() - 0.5) * 0.6;
         this.size = Math.random() * 2 + 1;
-        // Variación de color individual
         this.alpha = Math.random() * 0.5 + 0.1;
         this.pulseDir = 1;
     }
@@ -177,15 +174,15 @@ class Particle {
         this.x += this.vx;
         this.y += this.vy;
 
-        // Rebote
+        // Rebote en los bordes
         if (this.x < 0 || this.x > width) this.vx *= -1;
         if (this.y < 0 || this.y > height) this.vy *= -1;
 
-        // Efecto "Respiración" (Pulsing)
+        // Efecto de pulsación
         this.alpha += 0.005 * this.pulseDir;
         if (this.alpha > 0.6 || this.alpha < 0.1) this.pulseDir *= -1;
 
-        // Interacción Mouse (Repulsión Magnética Suave)
+        // Repulsión del cursor
         if (mouse.x != null) {
             let dx = mouse.x - this.x;
             let dy = mouse.y - this.y;
@@ -213,12 +210,12 @@ function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, width, height);
 
-    // Actualizar
+
     for (let i = 0; i < particles.length; i++) {
         particles[i].update();
     }
 
-    // Dibujar Triángulos
+    // Dibujar triángulos entre partículas cercanas
     for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
             const dx = particles[i].x - particles[j].x;
@@ -242,11 +239,9 @@ function animate() {
                         ctx.lineTo(particles[k].x, particles[k].y);
                         ctx.closePath();
 
-                        // Color dinámico basado en el azul del tema
                         // Más opaco si está cerca del ratón
                         let alpha = 0.03;
                         if (mouse.x != null) {
-                            // Centro del triángulo
                             const cx = (particles[i].x + particles[j].x + particles[k].x) / 3;
                             const cy = (particles[i].y + particles[j].y + particles[k].y) / 3;
                             const dMouse = Math.sqrt((cx - mouse.x) ** 2 + (cy - mouse.y) ** 2);
@@ -267,11 +262,10 @@ function animate() {
         }
     }
 
-    // Dibujar Puntos Brillantes
+    // Dibujar partículas
     for (let i = 0; i < particles.length; i++) {
         ctx.beginPath();
         ctx.arc(particles[i].x, particles[i].y, particles[i].size, 0, Math.PI * 2);
-        // Puntos blancos brillantes con el alpha pulsante
         ctx.fillStyle = `rgba(255, 255, 255, ${particles[i].alpha})`;
         ctx.fill();
     }

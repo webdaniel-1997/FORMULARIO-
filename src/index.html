@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Únete al Equipo - Tarea 3</title>
-    <!-- Fuentes Modernas (Outfit + Inter) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700&display=swap"
         rel="stylesheet">
-    <!-- Iconos (FontAwesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,7 +24,6 @@
         <div class="form-card glass-effect">
             <form id="miFormulario" onsubmit="return false;">
 
-                <!-- Email -->
                 <div class="form-group">
                     <div class="input-wrapper">
                         <i class="fas fa-envelope input-icon"></i>
@@ -37,7 +34,6 @@
                     <span id="errorEmail" class="error-msg"></span>
                 </div>
 
-                <!-- Password -->
                 <div class="form-group">
                     <div class="input-wrapper">
                         <i class="fas fa-lock input-icon"></i>
@@ -45,7 +41,6 @@
                         <label for="password" class="floating-label">Contraseña</label>
                         <div class="validation-indicator"></div>
                     </div>
-                    <!-- Real-time Checklist -->
                     <div id="password-checklist" class="password-checklist">
                         <div class="check-item" id="check-len"><i class="far fa-circle"></i> Mínimo 5 caracteres</div>
                         <div class="check-item" id="check-upper"><i class="far fa-circle"></i> 1 mayúscula</div>
@@ -55,7 +50,6 @@
                     <span id="errorPass" class="error-msg"></span>
                 </div>
 
-                <!-- Usuario -->
                 <div class="form-group">
                     <div class="input-wrapper">
                         <i class="fas fa-user input-icon"></i>
@@ -66,7 +60,6 @@
                     <span id="errorUsuario" class="error-msg"></span>
                 </div>
 
-                <!-- Nombre -->
                 <div class="form-group">
                     <div class="input-wrapper">
                         <i class="fas fa-id-card input-icon"></i>
@@ -77,7 +70,6 @@
                     <span id="errorNombre" class="error-msg"></span>
                 </div>
 
-                <!-- Botones de Acción -->
                 <div class="form-actions">
                     <button type="button" id="btnControlTotal" class="btn-submit" disabled>
                         <span class="btn-text">ENVIAR SOLICITUD</span>
