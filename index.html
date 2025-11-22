@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete al Equipo - Tarea 3</title>
+    <!-- Fuentes Modernas (Outfit + Inter) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="main-wrapper">
+        <div class="header-content">
+            <h1>Únete a nuestro equipo</h1>
+            <p class="subtitle">Rellena tus datos y te contactaremos.</p>
+        </div>
+
+        <div class="form-card glass-effect">
+            <form id="miFormulario" onsubmit="return false;">
+
+                <!-- Email -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="text" id="email" name="email" class="floating-input" placeholder=" ">
+                        <label for="email" class="floating-label">Email</label>
+                        <div class="validation-indicator"></div>
+                    </div>
+                    <span id="errorEmail" class="error-msg"></span>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" name="password" class="floating-input" placeholder=" ">
+                        <label for="password" class="floating-label">Contraseña</label>
+                        <div class="validation-indicator"></div>
+                    </div>
+                    <!-- Real-time Checklist -->
+                    <div id="password-checklist" class="password-checklist">
+                        <div class="check-item" id="check-len"><i class="far fa-circle"></i> Mínimo 5 caracteres</div>
+                        <div class="check-item" id="check-upper"><i class="far fa-circle"></i> 1 mayúscula</div>
+                        <div class="check-item" id="check-lower"><i class="far fa-circle"></i> 1 minúscula</div>
+                        <div class="check-item" id="check-num"><i class="far fa-circle"></i> 1 número</div>
+                    </div>
+                    <span id="errorPass" class="error-msg"></span>
+                </div>
+
+                <!-- Usuario -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="usuario" name="usuario" class="floating-input" placeholder=" ">
+                        <label for="usuario" class="floating-label">Usuario</label>
+                        <div class="validation-indicator"></div>
+                    </div>
+                    <span id="errorUsuario" class="error-msg"></span>
+                </div>
+
+                <!-- Nombre -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-id-card input-icon"></i>
+                        <input type="text" id="nombre" name="nombre" class="floating-input" placeholder=" ">
+                        <label for="nombre" class="floating-label">Nombre y Apellidos</label>
+                        <div class="validation-indicator"></div>
+                    </div>
+                    <span id="errorNombre" class="error-msg"></span>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="form-actions">
+                    <button type="button" id="btnControlTotal" class="btn-submit" disabled>
+                        <span class="btn-text">ENVIAR SOLICITUD</span>
+                        <span class="loader"><i class="fas fa-circle-notch fa-spin"></i></span>
+                    </button>
+                    <button type="button" id="btnLimpiar" class="btn-clear">Limpiar formulario</button>
+                </div>
+
+                <div id="mensajesGlobales" class="global-messages"></div>
+            </form>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-info">
+            Daniel Garcia Ortega 76667976Y
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

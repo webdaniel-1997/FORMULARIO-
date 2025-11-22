@@ -1,0 +1,58 @@
+# --- Sistema Operativo ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Editores e IDEs ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc)
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# --- Node.js (si usas npm) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Archivos temporales ---
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# --- Archivos de respaldo ---
+*.bak
+*.backup
+*.old
+
+# --- Archivos compilados (si usas TypeScript o similar) ---
+dist/
+build/
+*.map
+
+# --- Entorno y configuración ---
+.env
+.env.local
+.env.development
+.env.production
+
+# --- Archivos específicos del proyecto ---
+# Descomenta si quieres ignorar archivos específicos
+# mi-archivo-privado.js
