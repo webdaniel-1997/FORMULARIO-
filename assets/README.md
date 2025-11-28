@@ -150,7 +150,7 @@ Naranja Error:     #FF8C6C
 ### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/webdaniel-1997/PROYECTOTAREA3.git
+git clone https://github.com/webdaniel-1997/FORMULARIO-.git
 cd PROYECTOTAREA3
 ```
 
@@ -267,7 +267,7 @@ Incluye:
 
 ### Bugs Conocidos
 
-No hay bugs reportados actualmente. Si encuentras alguno, [abre un Issue](https://github.com/webdaniel-1997/PROYECTOTAREA3/issues).
+No hay bugs reportados actualmente. Si encuentras alguno, [abre un Issue](https://github.com/webdaniel-1997/FORMULARIO-/issues).
 
 ---
 

@@ -6,7 +6,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-### 🚀 [VER DEMO EN VIVO](https://webdaniel-1997.github.io/PROYECTOTAREA3/) 🚀
+### 🚀 [VER DEMO EN VIVO](https://webdaniel-1997.github.io/FORMULARIO-/) 🚀
 
 ---
 
@@ -35,7 +35,7 @@ Tienes varias opciones:
 **Opción 1 - La más fácil:**
 ```bash
 # Clona el repo
-git clone https://github.com/webdaniel-1997/PROYECTOTAREA3.git
+git clone https://github.com/webdaniel-1997/FORMULARIO-.git
 
 # Abre el archivo directamente en tu navegador
 # (En Windows)
@@ -54,7 +54,7 @@ python -m http.server 8000
 ```
 
 **Opción 4 - GitHub Pages:**
-El proyecto se despliega automáticamente en: `https://webdaniel-1997.github.io/PROYECTOTAREA3/`
+El proyecto se despliega automáticamente en: `https://webdaniel-1997.github.io/FORMULARIO-/`
 
 ---
 
